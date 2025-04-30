@@ -1,0 +1,62 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Cricket Score</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Live Cricket Score</h1>
+            <p id="matchTitle">India vs Australia - 2nd T20</p>
+        </div>
+
+        <div class="score-section">
+            <div class="score" id="score">Loading score...</div>
+            <div class="status" id="status">Loading status...</div>
+        </div>
+
+        <div class="details">
+            <h3>Batting</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batsman</th>
+                        <th>R</th>
+                        <th>B</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                    </tr>
+                </thead>
+                <tbody id="batting"></tbody>
+            </table>
+
+            <h3>Bowling</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bowler</th>
+                        <th>O</th>
+                        <th>M</th>
+                        <th>R</th>
+                        <th>W</th>
+                    </tr>
+                </thead>
+                <tbody id="bowling"></tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            Last updated: <span id="updatedTime">--</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
